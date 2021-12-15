@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string spolgloski = "bcdfghjklmnpqrstwxzBCDFGHJKLMNPRQSTWXZ", samogloski = "aeiyouAEIYOU", tekst;
+    int ilespolg = 0, ilesamog = 0, i, j;
+
+    cout << "Podaj tekst: ";
+    getline(cin, tekst);
+    for (i = 0; i < tekst.length(); i++) {
+        for (j = 0; j < spolgloski.length(); j++) {
+            if (tekst[i] == spolgloski[j]) {
+                ilespolg++;
+            }
+        }
+        for (j = 0; j < samogloski.length(); j++) {
+            if (tekst[i] == samogloski[j]) {
+                ilesamog++;
+            }
+        }
+    }
+    cout << "Ilosc spolglosek: " << ilespolg << endl;
+    cout << "Ilosc samoglosek: " << ilesamog << endl;
+
+    return 0;
+}
