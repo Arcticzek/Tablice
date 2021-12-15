@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string init = "String", fetched, copied, joined;
+    int l;
+    cout << "Podaj stringa :\n";
+    getline(cin, fetched);
+    copied += fetched;
+    joined = init + joined.append(fetched);
+    l = joined.length();
+    cout << "Wynik:\n";
+    cout << "Zainicjowane: " << init << endl;
+    cout << "Odczytano: " << fetched << endl;
+    cout << "Skopiowane z odczytu: " << copied << endl;
+    cout << "Dolaczone: " << joined << endl;
+    cout << "Długosc dolaczonego stringa: " << l; 
+    return 0;
+}
