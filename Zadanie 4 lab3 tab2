@@ -5,18 +5,18 @@ using namespace std;
 
 int main()
 {
-    string init = "String", fetched, copied, joined;
-    int l;
+    string ini = "String", spr, kopia, dod;
+    int i;
     cout << "Podaj stringa :\n";
-    getline(cin, fetched);
-    copied += fetched;
-    joined = init + joined.append(fetched);
-    l = joined.length();
+    getline(cin, spr);
+    kopia += spr;
+    dod = ini + dod.append(spr);
+    i = dod.length();
     cout << "Wynik:\n";
-    cout << "Zainicjowane: " << init << endl;
-    cout << "Odczytano: " << fetched << endl;
-    cout << "Skopiowane z odczytu: " << copied << endl;
-    cout << "Dolaczone: " << joined << endl;
-    cout << "Długosc dolaczonego stringa: " << l; 
+    cout << "Zainicjowane: " << ini << endl;
+    cout << "Odczytano: " << spr << endl;
+    cout << "Skopiowane z odczytu: " << kopia << endl;
+    cout << "Dolaczone: " << dod << endl;
+    cout << "Długosc dolaczonego stringa: " << i; 
     return 0;
 }
